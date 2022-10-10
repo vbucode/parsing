@@ -1,7 +1,6 @@
 import requests
-url = "https://youtube.com"
+url = "https://www.youtube.com"
 r = requests.get(url)
 html = r.text
-f = open('youtube.html', 'w')
-f.write(html)
-f.close()
+with open("youtube.html", "a") as file:
+    file.write(html)
